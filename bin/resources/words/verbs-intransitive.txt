@@ -85,3 +85,4 @@ stays,stay,stayed,stayed,staying
 remains,remain,remained,remained,remaining
 rings,ring,rung,rung,ringing
 writes,write,wrote,written,writing
+fights,fight,fought,fought,fighting

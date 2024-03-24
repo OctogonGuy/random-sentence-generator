@@ -667,3 +667,4 @@ bannister,bannisters
 handrail,handrails
 rail,rails
 tower,towers
+cowboy,cowboys
