@@ -60,8 +60,8 @@ public class RandomSentenceGeneratorApplication extends Application {
 	
 	// Fonts {display name, font}
 	protected LinkedHashMap<String, String> fonts;
-	private final String DEFAULT_FONT = "Arial";
-	private final String GUI_FONT = "Arial";
+	private final String DEFAULT_FONT = "Arimo";
+	private final String GUI_FONT = "sans-serif";
 	
 	// Font sizes {display name, size}
 	private LinkedHashMap<String, Double> sizes;
@@ -229,20 +229,36 @@ public class RandomSentenceGeneratorApplication extends Application {
 	
 	public void buildFonts() {
 		fonts = new LinkedHashMap<String, String>();
-		fonts.put("Arial", "Arial");
-		fonts.put("Calibri", "Calibri");
-		fonts.put("Times New Roman", "Times New Roman");
-		fonts.put("Helvetica", "Helvetica");
-		fonts.put("Arial Rounded", "Arial Rounded MT Bold");
-		fonts.put("Century Gothic", "Century Gothic");
-		fonts.put("Gill Sans", "Gill Sans MT");
-		fonts.put("Comic Sans", "Comic Sans MS");
-		fonts.put("Lucida Sans", "Lucida Sans");
-		fonts.put("Lucida Sans Typewriter", "Lucida Sans Typewriter");
-		fonts.put("Lucida Handwriting", "Lucida Handwriting");
-		fonts.put("Garamond", "Garamond");
-		fonts.put("Tahoma", "Tahoma");
-		fonts.put("Papyrus", "Papyrus");
+
+		// Load fonts
+		Font f1 = Font.loadFont(getClass().getResourceAsStream("fonts/Arimo-Regular.ttf"), 12);
+		fonts.put("Arimo", f1.getFamily());
+		Font f2 = Font.loadFont(getClass().getResourceAsStream("fonts/Carlito-Regular.ttf"), 12);
+		fonts.put("Carlito", f2.getFamily());
+		Font f3 = Font.loadFont(getClass().getResourceAsStream("fonts/Tinos-Regular.ttf"), 12);
+		fonts.put("Tinos", f3.getFamily());
+		Font f4 = Font.loadFont(getClass().getResourceAsStream("fonts/Inter_18pt-Regular.ttf"), 12);
+		fonts.put("Inter", f4.getFamily());
+		Font f5 = Font.loadFont(getClass().getResourceAsStream("fonts/VarelaRound-Regular.ttf"), 12);
+		fonts.put("Varela Round", f5.getFamily());
+		Font f6 = Font.loadFont(getClass().getResourceAsStream("fonts/Questrial-Regular.ttf"), 12);
+		fonts.put("Questrial", f6.getFamily());
+		Font f7 = Font.loadFont(getClass().getResourceAsStream("fonts/Lato-Regular.ttf"), 12);
+		fonts.put("Lato", f7.getFamily());
+		Font f8 = Font.loadFont(getClass().getResourceAsStream("fonts/ComicRelief-Regular.ttf"), 12);
+		fonts.put("Comic Relief", f8.getFamily());
+		Font f9 = Font.loadFont(getClass().getResourceAsStream("fonts/OpenSans-Regular.ttf"), 12);
+		fonts.put("Open Sans", f9.getFamily());
+		Font f10 = Font.loadFont(getClass().getResourceAsStream("fonts/Cousine-Regular.ttf"), 12);
+		fonts.put("Cousine", f10.getFamily());
+		Font f11 = Font.loadFont(getClass().getResourceAsStream("fonts/Allura-Regular.ttf"), 12);
+		fonts.put("Allura", f11.getFamily());
+		Font f12 = Font.loadFont(getClass().getResourceAsStream("fonts/SpecialElite-Regular.ttf"), 12);
+		fonts.put("Special Elite", f12.getFamily());
+		Font f13 = Font.loadFont(getClass().getResourceAsStream("fonts/EBGaramond-Regular.ttf"), 12);
+		fonts.put("EB Garamond", f13.getFamily());
+		Font f14 = Font.loadFont(getClass().getResourceAsStream("fonts/JANCIENT.ttf"), 12);
+		fonts.put("JSL Ancient", f14.getFamily());
 	};
 	
 	public void buildColors() {
